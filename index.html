@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/calculator.css">
+    <link rel="shortcut icon" href="/zeke logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="mainbody">
+    <div class="contanier">
+        <div class="Calculator dark">
+            <h1>Calculator App</h1>
+            <div class="display-screen">
+                <input type="textview" name="textview" id="result" disabled >
+            </div>
+
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button onclick="clearScreen()" value="C" class="btn-allclear">C</button></td>
+                        <td><button onclick="showValue('/')" value="/" class="btn-operator" id="/">÷</button></td>
+                        <td><button onclick="showValue('*')" value="*" class="btn-operator" id="*">×</button></td>
+                        <td><button onclick="backSpace()" value="<" class="btn-delete" id="backspace"><</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button onclick="showValue(7)" value="7" class="btn-number" id="7">7</button></td>
+                        <td><button onclick="showValue(8)" value="8" class="btn-number" id="8">8</button></td>
+                        <td><button onclick="showValue(9)" value="9" class="btn-number" id="9">9</button></td>
+                        <td><button onclick="showValue('-')" value="-" class="btn-operator" id="-">–</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button onclick="showValue(4)" value="4" class="btn-number" id="4">4</button></td>
+                        <td><button onclick="showValue(5)" value="5" class="btn-number" id="5">5</button></td>
+                        <td><button onclick="showValue(6)" value="6" class="btn-number" id="6">6</button></td>
+                        <td><button onclick="showValue('+')" value="+" class="btn-operator" id="+">+</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button onclick="showValue(1)" value="1" class="btn-number" id="1">1</button></td>
+                        <td><button onclick="showValue(2)" value="2" class="btn-number" id="2">2</button></td>
+                        <td><button onclick="showValue(3)" value="3" class="btn-number" id="3">3</button></td>
+                        <td rowspan="2"><button onclick="solve()" value="=" class="btn-equal" id="equal">=</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button onclick="showValue('.')" class="btn-operator" id=".">.</button></td>
+                        <td><button onclick="showValue('0')" class="btn-number" id="0">0</button></td>
+                        <td><button onclick="showValue('00')" class="btn-number" id="zero">00</button></td>
+                    </tr>
+                </table>
+           </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="/calculator.js"></script>
+</body>
+</html>
